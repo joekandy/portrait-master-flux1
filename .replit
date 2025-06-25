@@ -1,0 +1,8 @@
+modules = ["bash", "python-3.11"]
+run = "cd /path/to/ComfyUI git clone https://github.com/TUO_USERNAME/portrait-master-flux1.git . chmod +x PORTRAIT_MASTER_COMPLETE_SETUP.sh ./PORTRAIT_MASTER_COMPLETE_SETUP.sh"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "cd /path/to/ComfyUI git clone https://github.com/TUO_USERNAME/portrait-master-flux1.git . chmod +x PORTRAIT_MASTER_COMPLETE_SETUP.sh ./PORTRAIT_MASTER_COMPLETE_SETUP.sh"]
